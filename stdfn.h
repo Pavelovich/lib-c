@@ -182,4 +182,11 @@ char* dstr(double number)
 	strcpy(doutput, string);
 	return doutput;
 }
+
+int getFileSize(FILE* file)
+{
+	fseek(file, 0L, SEEK_END);
+	int file_size = ftell(file);
+	return file_size;
+}
 #endif
