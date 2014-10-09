@@ -14,11 +14,11 @@
 #ifndef STDFN_H
 #define STDFN_H
 
-int intro(char name[30], int year, char license[10])
+int intro(char name[30], char author[40], int year, char license[10])
 {
 	printf("------------------------------------------------------------------------------------------------------------------\n");
 	printf("|                     %30s                                                             |\n", name);
-	printf("|                     Copyright © %4d Aleksandr Pavelovich                                                      |\n", year);
+	printf("|                     Copyright © %4d %40s                                                      |\n", year, author);
 	printf("|                     Free and open source software for modification and distribution under the                  |\n");
 	printf("|                     %10s license                                                                         |\n", license);
 	printf("|                                                                                                                |\n");
